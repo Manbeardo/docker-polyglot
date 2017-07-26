@@ -9,10 +9,11 @@ RUN apt-get update && apt-get install -y \
   curl \
   apt-transport-https
 
-COPY yarn.pubkey.gpg /
-COPY yarn.list /etc/apt/sources.list.d/
-RUN apt-key add /yarn.pubkey.gpg
+COPY gpg-keys /gpg-keys
+COPY apt-sources/* /etc/apt/sources.list.d/
+RUN apt-key add /gpg-keys/*
 
 RUN apt-get update && apt-get install -y \
   openjdk-8-jdk \
+  nodejs \
   yarn
