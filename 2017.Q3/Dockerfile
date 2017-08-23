@@ -16,4 +16,9 @@ RUN apt-key add /gpg-keys/*
 RUN apt-get update && apt-get install -y \
   openjdk-8-jdk \
   nodejs \
-  yarn
+  yarn \
+  docker \
+  jq \
+  python-pip
+
+RUN pip install --upgrade pip && pip install awscli --upgrade --user
