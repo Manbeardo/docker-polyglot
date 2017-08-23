@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
   openjdk-8-jdk \
   nodejs \
   yarn \
-  docker \
+  docker-ce \
   jq \
   python-pip
 
