@@ -21,4 +21,4 @@ RUN apt-get update && apt-get install -y \
   jq \
   python-pip
 
-RUN pip install --upgrade pip && pip install awscli --upgrade --user
+RUN pip install --upgrade pip && pip install awscli --upgrade
