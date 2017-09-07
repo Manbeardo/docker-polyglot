@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
   yarn \
   docker-ce \
   jq \
-  python-pip
+  python-pip \
+  openssh-client
 
 RUN pip install --upgrade pip && pip install awscli --upgrade
