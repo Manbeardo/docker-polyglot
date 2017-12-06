@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y \
   ca-certificates \
   openssh-client \
   software-properties-common \
+  uuid \
   vim \
   zip
 
